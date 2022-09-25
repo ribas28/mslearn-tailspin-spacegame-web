@@ -1,15 +1,10 @@
-# ASP.NET Core
-# Build and test ASP.NET Core projects targeting .NET Core.
-# Add steps that run tests, create a NuGet package, deploy, and more:
-# https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
-
 trigger:
 - '*'
 
 pool:
-  name: 'default'
-  vmImage: 'Ribas'
-  demands: - npm
+  vmImage: 'default'  
+  demands: 'RIBAS'
+  - npm
 
 variables:
   buildConfiguration: 'Release'

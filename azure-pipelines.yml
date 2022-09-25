@@ -1,9 +1,11 @@
-- task: NodeTool@0
-  inputs:
-    versionSpec: '6.x'
 
 trigger:
 - '*'
+
+- task: NodeTool@0
+  inputs:
+    versionSpec: '>6.x'
+
 
 pool:
   name: 'default'

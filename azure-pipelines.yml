@@ -2,8 +2,9 @@ trigger:
 - '*'
 
 pool:
-  vmImage: 'default'  
-  demands: 'RIBAS'
+  vmImage: 'default'
+  name: 'RIBAS'
+  demands:
   - npm
 
 variables:

@@ -5,6 +5,8 @@ trigger:
 pool:
   name: 'default'
   vmImage: 'RIBAS'
+  demands:
+  - npm
 
 
 variables:
